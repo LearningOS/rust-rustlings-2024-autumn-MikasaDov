@@ -28,6 +28,7 @@ fn create_order_template() -> Order {
         item_number: 123,
         count: 0,
     }
+    //是一个结构体实例的创建表达式，位于函数的最后一行，并且没有分号,因此它会自动作为函数的返回值
 }
 
 #[cfg(test)]
