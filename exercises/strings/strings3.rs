@@ -3,23 +3,27 @@
 // Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from both ends of a string!
-    ???
+    input.trim().to_string()
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There's multiple ways to do this!
-    ???
+    input.to_string() + " world!"
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons"!
-    ???
+    input.replace("cars", "balloons")
+    //replace 返回一个新string,不会改变input
 }
 
+
+//模块的父模块是指模块定义的外层，也就是当前模块之外的代码范围。
+//具体来说，不在 mod tests 中的代码，包括模块定义之前和之后的代码，都属于父模块的一部分。
 #[cfg(test)]
 mod tests {
     use super::*;

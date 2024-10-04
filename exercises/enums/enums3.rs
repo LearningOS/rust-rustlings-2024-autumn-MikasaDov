@@ -57,6 +57,7 @@ impl State {
 }
 
 #[cfg(test)]
+//模块是一种组织代码的方式，允许你将相关代码分组。
 mod tests {
     use super::*;
 
